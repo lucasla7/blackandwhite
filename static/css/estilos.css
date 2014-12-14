@@ -365,25 +365,8 @@ aside {
 #logo-home{
 	width: auto;
 	margin: 0 auto;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	-webkit-filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
-	-moz-filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
-	-ms-filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
-	-o-filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
-	filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
 }
 
-#logo-home:hover{
-	-webkit-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
-	-moz-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
-	-ms-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
-	-o-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
-	filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
-}
 
 .blacked{
 	font-weight: bold;
@@ -405,6 +388,9 @@ aside {
 .logo-lat{
 	min-width: 60px !important;
 	margin: 0 auto;
+}
+
+.luznegra{
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -417,12 +403,16 @@ aside {
 	filter: drop-shadow(0px 0px 10px rgba(167,0,255,0.8));
 }
 
-.logo-lat:hover{
+.luznegra:hover{
 	-webkit-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
 	-moz-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
 	-ms-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
 	-o-filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
 	filter: drop-shadow(0px 0px 30px rgba(167,0,255,0.8));
+}
+
+.rounded{
+	border-radius: 3px;
 }
 
 .subtitulo {
