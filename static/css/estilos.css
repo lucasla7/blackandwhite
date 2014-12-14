@@ -69,7 +69,11 @@ body {
 	background: #eeeeee;
 	font-family: 'monotype corsiva','Dancing Script', cursive, 'Open Sans' !important;
 	color:#fff !important;
-	/*font-size: 16px;*/
+	font-size: 16px;
+}
+
+body h1 {
+	margin-top: 0px !important; 
 }
 
 footer{
@@ -125,6 +129,8 @@ header h1 {
 
 header h2 {
 	/*color: #55748D;*/
+	width: auto;
+	margin: 0 auto;
 	color: #bbbbbb;
 	font-size: 1.3em;
 	font-weight: normal;
@@ -149,9 +155,6 @@ header #avatar img {
     height: 55px;
 	width: auto;
 	/*border-radius: 50%;*/
-	/*height: 55px;*/
-	/*width: 55px;*/
-	/*width: 55px;*/
 }
 
 header #logo {
@@ -162,12 +165,12 @@ header #logo {
 }
 
 header #logo .giroamplio:hover{
+	width: 105px;
+    height: 105px;
 	-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	-o-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
-	width: 105px;
-    height: 105px;
 }
 
 header #logo .giroamplio { 
@@ -183,15 +186,16 @@ header #logo .giroamplio {
 }
 
 header #logo img:hover{
+	width: 105px;
+    height: 105px;
 	-webkit-transform:rotate(-270deg);
 	-moz-transform:rotate(-270deg);
 	-o-transform:rotate(-270deg);
 	-ms-transform:rotate(-270deg);
 }
 
-header #logo img { 
-	height: 100%;
-	margin-right: 0.5em;
+header #logo img {
+	/*margin-right: 0.5em;*/
 	-webkit-transition:1s;
 	-moz-transition:1s;
 	-o-transition:1s;
@@ -199,11 +203,13 @@ header #logo img {
 }
 
 header #logo .bajo {
+	/*height: 70px;*/
 	position:relative;
 	overflow:hidden;
 }
 
 header #logo .sobre {
+	height: 70px;
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -424,6 +430,10 @@ aside {
     position: relative;
     -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
     animation: myfirst 5s;
+}
+
+.tablon {
+	padding: 0 !important;
 }
 
 /* Chrome, Safari, Opera */
