@@ -424,6 +424,7 @@ aside {
 
 .tablon {
 	padding: 0 !important;
+	word-wrap: break-word;
 }
 
 /* Chrome, Safari, Opera */

@@ -1,0 +1,49 @@
+<HEAD>
+
+<!-- Load jQuery (REQUIRED; if not already included in page!!!) -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!-- Load Files for Fancybox Plugin (Please check and adjust Path Names if necessary!) -->
+<link rel="stylesheet" type="text/css" href="Plugins/FancyBox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="Plugins/FancyBox/Helpers/jquery.fancybox-buttons.css" />
+<link rel="stylesheet" type="text/css" href="Plugins/FancyBox/Helpers/jquery.fancybox-thumbs.css" />
+<script type="text/javascript" src="Plugins/FancyBox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="Plugins/FancyBox/Helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="Plugins/FancyBox/Helpers/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript" src="Plugins/FancyBox/Helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="Plugins/FancyBox/Helpers/jquery.fancybox-easing.js"></script>
+
+<!-- Load Files for Tooltip Plugin (Please check and adjust Path Names if necessary!) -->
+<link rel="stylesheet" type="text/css" href="Plugins/ToolTip/jquery.qtip.css" />
+<script type="text/javascript" src="Plugins/ToolTip/jquery.qtip.min.js"></script>
+
+<!-- Load Files for Metafizzy Isotope Plugin (Please check and adjust Path Names if necessary!) -->
+<script type="text/javascript" src="Plugins/Isotope/jquery.isotope.min.js"></script>
+
+<!-- Load Files for Facebook Gallery Plugin (Please check and adjust Path Names if necessary!) -->
+<link rel="stylesheet" type="text/css" href="CSS/jquery.fb-album.css" />
+<script type="text/javascript" src="JS/jquery.fb-album.min.js"></script>
+
+</HEAD>
+
+<BODY>
+
+...
+
+
+<!-- Put this DIV where you want the Gallery to appear on your Website -->
+<div id="FB_Album_Frame"></div>
+
+<!-- This Code will initialize the Gallery with your Settings (can also be inserted in HEAD Section) -->
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $("#FB_Album_Frame").FB_Album({
+            facebookID: "152173388254770",
+            responsiveGallery: true,
+            responsiveWidth: 90,
+        });
+    });
+</script>
+
+
+</BODY>

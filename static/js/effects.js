@@ -27,7 +27,10 @@ function inicial_avatars(){
 //EVENTOS
 
 $(document).ready(function(){
+  //cargamos home
   carga_contenido('home');
+  //cargamos el video de fondo de home
+  
   //fundido inicial
   home_fadein();
   //cargas al hacer click en elementos de navbar
