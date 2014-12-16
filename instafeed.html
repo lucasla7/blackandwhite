@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Sitio WEB de sala Black and White" />
+	<link rel="shortcut icon" href="./static/img/favicon.png"/>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" type="text/css" href="./static/css/estilos.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="static/js/effects.js"></script>
+	<script type="text/javascript" src="static/js/instafeed.js"></script>
+	<title>Black and White: Disfruta tu punto de encuentro</title>
+</head>
+<body>
+	<header>
+		<figure id="logo">
+			<div class="giroamplio">
+				<img class="bajo img-responsive" id="bajo" src="./static/img/logo.png" />
+				<img class="sobre" id="sobre" src="./static/img/logo_letras.png" />
+			</div>
+		</figure>
+		<h1 id="nombrepub">
+			<span class="blacked">Black</span><span class="whited">White</span>
+		<h2>
+			<span class="subtitulo">
+				<i class="fa fa-glass"></i>Lounge Bar<i class="fa fa-glass"></i>
+			</span>
+		<figure id="avatar">
+			<img src="./static/img/cubata_header.png" />
+			<img src="./static/img/cachimba_header.png" />
+		</figure>
+	</header>
+	<nav class="navbar navbar-static-top" role="navigation">
+		<!-- <div class="container">
+			<div class="row"> -->
+				<ul>
+					<li><a id="home" href="#"><i class="fa fa-home"></i>Inicio</a></li></span>
+					<li><a id="eventos" href="#"><i class="fa fa-calendar"></i>Eventos</a></li>
+					<li><a id="ofertas" href="#"><i class="fa fa-money"></i>Ofertas</a></li>					
+					<li><a id="fotogaleria" href="#"><i class="fa fa-camera"></i>Fotogalería</a></li>
+					<li><a id="contacto" href="#"><i class="fa fa-fax"></i>Contacto</a></li>
+					<li><a id="futbol" href="#"><i class="fa fa-futbol-o"></i>Peña Athletic</a></li>
+					<li id="publicar_nav">
+						<a href="#" class="icon-pen" id="view-form-btn">Regístrate</a>
+					</li>
+				</ul>
+			<!--</div>
+		</div>-->
+	</nav>
+	<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
+			</div>
+			<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 tablon">
+				<h1 align="center">Galería de fotos de <span class="whited">Black</span><span class="blacked">White</span></h1>
+				<div class="row">
+					<div class="col-xs-12">
+					<div id="instafeed" class="luznegra" style="border: 5px double #212121; overflow: hidden; background-color: #899CB5; background-image: url('static/img/logo_fondo.png'); background-size: 25%; padding-right: 8px;">
+					</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 1597847085,
+						accessToken: '1597847085.467ede5.c469754cdabb47bfa59c137574efedff',
+						resolution: 'standard_resolution',
+						template: '<a  href="{{link}}" target="_blank"><img style="opacity: 0.9; margin: 4px; display: inline-block;" class="img-responsive" src="{{image}}" /></a>'
+					});
+					feed.run();
+				</script>
+			</div>
+			<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+				<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
+			</div>
+		</div>
+	</div>
+	</section>
+	<footer>
+		<h5>
+			<strong>
+				Powered by LucasLA7
+			</strong>
+		</h5>
+		<p>
+			Luis Alejandro Lucas Flores 2014
+		</p>
+	</footer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
