@@ -53,35 +53,30 @@
 		</div>-->
 	</nav>
 	<section>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-				<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
-			</div>
-			<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 tablon">
-				<h1 align="center">Galería de fotos de <span class="whited">Black</span><span class="blacked">White</span></h1>
-				<div class="row">
-					<div class="col-xs-12">
-					<div id="instafeed" class="luznegra" style="border: 5px double #212121; overflow: hidden; background-color: #899CB5; background-image: url('static/img/logo_fondo.png'); background-size: 25%; padding-right: 8px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2 nover">
+					<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
+				</div>
+					<div class="col-xs-10 col-sm-8 col-md-8 col-lg-8 tablon">
+						<h1 align="center">Galería de fotos de <span class="whited">Black</span><span class="blacked">White</span></h1>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<div id="instafeed" class="luznegra photocall">
+									<!--should make them responsive into a grid or cols-->
+									<!--instagram templated images go here-->
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2 nover">
+						<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
 					</div>
 				</div>
-				<script type="text/javascript">
-					var feed = new Instafeed({
-						get: 'user',
-						userId: 1597847085,
-						accessToken: '1597847085.467ede5.c469754cdabb47bfa59c137574efedff',
-						resolution: 'standard_resolution',
-						template: '<a  href="{{link}}" target="_blank"><img style="opacity: 0.9; margin: 4px; display: inline-block;" class="img-responsive" src="{{image}}" /></a>'
-					});
-					feed.run();
-				</script>
-			</div>
-			<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-				<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
 			</div>
 		</div>
-	</div>
 	</section>
 	<footer>
 		<h5>
@@ -94,5 +89,15 @@
 		</p>
 	</footer>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			get: 'user',
+			userId: 1597847085,
+			accessToken: '1597847085.467ede5.c469754cdabb47bfa59c137574efedff',
+			resolution: 'standard_resolution',
+			template: '<div class="col-md-4 col-sm-6 col-xs-12 marco"><a  href="{{link}}" target="_blank"><img class="img-responsive photo" src="{{image}}" /></a></div>'
+		});
+		feed.run();
+	</script>
 </body>
 </html>

@@ -1,15 +1,31 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-			<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
+		<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+			<img class="img-responsive logo-lat luznegra nover" src="static/img/logo.png" alt="Black White" />
 		</div>
-		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 tablon">
+		<div class="col-xs-10 col-sm-8 col-md-8 col-lg-8 tablon">
 			<h1 align="center">Galería de fotos de <span class="whited">Black</span><span class="blacked">White</span></h1>
-			<!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script>
-			<iframe src="//instansive.com/widgets/c84f41e092da86c8ee70f34fbb09232ac76dd25e.html" id="instansive_c84f41e092" name="instansive_c84f41e092"  scrolling="no" allowtransparency="true" class="instansive-widget luznegra" style="width: 100%; border: 5px double #212121; overflow: hidden; background-color: #899CB5; background-image: url('static/img/logo_fondo.png'); background-size: 25%; padding-bottom: 0.5%;"></iframe>
+			<div class="container-fluid">
+				<div class="row">
+					<div id="instafeed" class="luznegra photocall">
+					<!--should make them responsive into a grid or cols-->
+					<!--instagram templated images go here-->
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-			<img class="img-responsive logo-lat luznegra" src="static/img/logo.png" alt="Black White" />
+		<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+			<img class="img-responsive logo-lat luznegra nover" src="static/img/logo.png" alt="Black White" />
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+var feed = new Instafeed({
+	get: 'user',
+	userId: 1597847085,
+	accessToken: '1597847085.467ede5.c469754cdabb47bfa59c137574efedff',
+	resolution: 'standard_resolution',
+	template: '<div class="col-md-4 col-sm-6 col-xs-12 marco"><a href="{{link}}" target="_blank"><img class="img-responsive photo" src="{{image}}" /></a></div>'
+});
+feed.run();
+</script>
